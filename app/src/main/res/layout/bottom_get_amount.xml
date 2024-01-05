@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/input_background"
+    android:padding="@dimen/_5sdp">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_border"
+        android:hint="Miktar"
+        android:textColor="@color/black"
+        android:id="@+id/amountEt"
+        android:fontFamily="@font/montserrat"
+        android:maxLength="30"
+        android:inputType="number"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        app:cornerRadius="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="Onayla"
+        android:fontFamily="@font/montserrat"
+        android:id="@+id/confirmBtn"/>
+
+
+</LinearLayout>

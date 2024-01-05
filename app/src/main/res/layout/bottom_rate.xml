@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/filter_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Değerlendir"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:text="Gönder"
+        app:cornerRadius="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:id="@+id/sendRateBtn"/>
+
+
+</LinearLayout>

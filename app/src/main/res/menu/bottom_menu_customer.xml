@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Ana Sayfa"
+        android:id="@+id/navHome"
+        android:icon="@drawable/home_1_svgrepo_com"/>
+
+
+    <item
+        android:title="Sepetim"
+        android:id="@+id/navCart"
+        android:icon="@drawable/cart_svgrepo_com__2_"/>
+
+
+    <item
+        android:title="Siparişlerim"
+        android:id="@+id/navOrders"
+        android:icon="@drawable/order_svgrepo_com"/>
+
+    <item
+        android:title="Profil"
+        android:id="@+id/navProfile"
+        android:icon="@drawable/profile_user_svgrepo_com"/>
+
+</menu>

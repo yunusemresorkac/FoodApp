@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/input_background"
+    android:padding="@dimen/_5sdp">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_border"
+        android:hint="Miktar"
+        android:textColor="@color/black"
+        android:id="@+id/amountEt"
+        android:fontFamily="@font/montserrat"
+        android:maxLength="30"
+        android:inputType="number"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_border"
+        android:hint="Kart Bilgileri"
+        android:textColor="@color/black"
+        android:id="@+id/cardNoEt"
+        android:fontFamily="@font/montserrat"
+        android:maxLength="19"
+        android:inputType="number"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rect_border"
+            android:hint="Son Kullanma Tarihi"
+            android:maxLength="5"
+            android:textColor="@color/black"
+            android:id="@+id/cardSkEt"
+            android:fontFamily="@font/montserrat"
+            android:inputType="number"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rect_border"
+            android:id="@+id/cardCvcEt"
+            android:hint="CVC"
+            android:textColor="@color/black"
+            android:maxLength="3"
+            android:fontFamily="@font/montserrat"
+            android:inputType="number"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_border"
+        android:hint="Karttaki Ad Bilgisi"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat"
+        android:id="@+id/cardNameEt"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kart Bilgilerimi Kaydet"
+        android:id="@+id/saveCardCb"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        app:cornerRadius="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:text="Onayla"
+        android:fontFamily="@font/montserrat"
+        android:id="@+id/confirmBtn"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/savedCard"
+        android:visibility="gone"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/rect_border"
+        android:layout_margin="@dimen/_5sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/credit_card_svgrepo_com__2_"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İsim"
+            android:id="@+id/savedCardName"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserrat"/>
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:id="@+id/deleteCard"
+            android:src="@drawable/ic_delete_"
+            android:layout_alignParentEnd="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_centerVertical="true"
+            app:tint="@color/error" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
